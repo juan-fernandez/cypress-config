@@ -1,4 +1,7 @@
 describe('example template spec', () => {
+    afterEach(() => {
+        throw new Error('after each error')
+    })
     it('1. example passes', () => {
         cy.visit('https://example.cypress.io')
     })
